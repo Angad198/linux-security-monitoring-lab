@@ -1,0 +1,50 @@
+2026-04-27T21:09:44.511379+12:00 Priyanka systemd-logind[171]: System is powering down.
+2026-04-28T14:04:47.390437+12:00 Priyanka systemd-logind[180]: New seat seat0.
+2026-04-28T14:04:49.630087+12:00 Priyanka login[357]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-04-28T14:04:49.630268+12:00 Priyanka login[357]: PAM adding faulty module: pam_lastlog.so
+2026-04-28T14:04:50.071945+12:00 Priyanka login[357]: pam_unix(login:session): session opened for user harry(uid=1000) by harry(uid=0)
+2026-04-28T14:04:50.155333+12:00 Priyanka systemd-logind[180]: New session 1 of user harry.
+2026-04-28T14:04:50.174621+12:00 Priyanka (systemd): pam_unix(systemd-user:session): session opened for user harry(uid=1000) by harry(uid=0)
+2026-04-28T14:09:06.755496+12:00 Priyanka systemd-logind[180]: The system will power off now!
+2026-04-28T14:09:06.769519+12:00 Priyanka systemd-logind[180]: System is powering down.
+2026-04-28T14:13:50.791667+12:00 Priyanka systemd-logind[165]: New seat seat0.
+2026-04-28T14:13:53.020552+12:00 Priyanka login[296]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-04-28T14:13:53.020777+12:00 Priyanka login[296]: PAM adding faulty module: pam_lastlog.so
+2026-04-28T14:13:53.454045+12:00 Priyanka login[296]: pam_unix(login:session): session opened for user harry(uid=1000) by harry(uid=0)
+2026-04-28T14:13:53.554078+12:00 Priyanka systemd-logind[165]: New session 1 of user harry.
+2026-04-28T14:13:53.580344+12:00 Priyanka (systemd): pam_unix(systemd-user:session): session opened for user harry(uid=1000) by harry(uid=0)
+2026-04-28T14:14:37.319275+12:00 Priyanka sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=harry rhost=  user=harry
+2026-04-28T14:14:54.246950+12:00 Priyanka sudo:    harry : 3 incorrect password attempts ; TTY=pts/0 ; PWD=/home/harry ; USER=root ; COMMAND=/usr/sbin/adduser adminuser
+2026-04-28T14:15:01.547487+12:00 Priyanka sudo:    harry : TTY=pts/0 ; PWD=/home/harry ; USER=root ; COMMAND=/usr/sbin/adduser guestuser
+2026-04-28T14:15:01.548198+12:00 Priyanka sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-04-28T14:15:01.643342+12:00 Priyanka sudo: pam_unix(sudo:session): session closed for user root
+2026-04-28T14:17:02.711397+12:00 Priyanka CRON[432]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-04-28T14:17:02.715496+12:00 Priyanka CRON[432]: pam_unix(cron:session): session closed for user root
+2026-04-28T14:54:31.500228+12:00 Priyanka systemd-logind[165]: The system will power off now!
+2026-04-28T14:54:31.578889+12:00 Priyanka systemd-logind[165]: System is powering down.
+2026-04-28T22:27:29.657680+12:00 Priyanka systemd-logind[168]: New seat seat0.
+2026-04-28T22:27:30.903494+12:00 Priyanka login[296]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-04-28T22:27:30.904443+12:00 Priyanka login[296]: PAM adding faulty module: pam_lastlog.so
+2026-04-28T22:27:31.348580+12:00 Priyanka login[296]: pam_unix(login:session): session opened for user harry(uid=1000) by harry(uid=0)
+2026-04-28T22:27:31.452790+12:00 Priyanka systemd-logind[168]: New session 1 of user harry.
+2026-04-28T22:27:31.473863+12:00 Priyanka (systemd): pam_unix(systemd-user:session): session opened for user harry(uid=1000) by harry(uid=0)
+2026-04-28T22:30:23.648820+12:00 Priyanka sudo:    harry : TTY=pts/0 ; PWD=/home/harry ; USER=root ; COMMAND=/usr/sbin/adduser adminuser
+2026-04-28T22:30:23.649825+12:00 Priyanka sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-04-28T22:30:23.773961+12:00 Priyanka groupadd[423]: group added to /etc/group: name=adminuser, GID=1002
+2026-04-28T22:30:23.780283+12:00 Priyanka groupadd[423]: group added to /etc/gshadow: name=adminuser
+2026-04-28T22:30:23.783203+12:00 Priyanka groupadd[423]: new group: name=adminuser, GID=1002
+2026-04-28T22:30:23.816159+12:00 Priyanka useradd[430]: new user: name=adminuser, UID=1002, GID=1002, home=/home/adminuser, shell=/bin/bash, from=/dev/pts/2
+2026-04-28T22:30:32.796972+12:00 Priyanka passwd[443]: pam_unix(passwd:chauthtok): password changed for adminuser
+2026-04-28T22:30:35.854918+12:00 Priyanka chfn[444]: changed user 'adminuser' information
+2026-04-28T22:30:38.000129+12:00 Priyanka gpasswd[452]: members of group users set by root to harry,guestuser,adminuser
+2026-04-28T22:30:38.005213+12:00 Priyanka sudo: pam_unix(sudo:session): session closed for user root
+2026-04-29T13:35:45.167467+12:00 Priyanka systemd-logind[168]: The system will power off now!
+2026-04-29T13:35:45.294312+12:00 Priyanka systemd-logind[168]: System is powering down.
+2026-04-29T14:05:41.246016+12:00 Priyanka systemd-logind[168]: New seat seat0.
+2026-04-29T14:05:42.508574+12:00 Priyanka login[296]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-04-29T14:05:42.508827+12:00 Priyanka login[296]: PAM adding faulty module: pam_lastlog.so
+2026-04-29T14:05:43.265803+12:00 Priyanka login[296]: pam_unix(login:session): session opened for user harry(uid=1000) by harry(uid=0)
+2026-04-29T14:05:43.376980+12:00 Priyanka systemd-logind[168]: New session 1 of user harry.
+2026-04-29T14:05:43.442350+12:00 Priyanka (systemd): pam_unix(systemd-user:session): session opened for user harry(uid=1000) by harry(uid=0)
+2026-04-29T14:06:00.538707+12:00 Priyanka sudo:    harry : TTY=pts/0 ; PWD=/home/harry/lab/security-monitoring-project ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-04-29T14:06:00.539436+12:00 Priyanka sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
